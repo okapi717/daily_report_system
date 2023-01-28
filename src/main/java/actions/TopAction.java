@@ -11,13 +11,11 @@ import constants.AttributeConst;
 import constants.ForwardConst;
 import constants.JpaConst;  //追記
 import services.ReportService;  //追記
-
 /**
  * トップページに関する処理を行うActionクラス
  *
  */
 public class TopAction extends ActionBase {
-
     private ReportService service; //追記
 
     /**
@@ -40,7 +38,7 @@ public class TopAction extends ActionBase {
      */
     public void index() throws ServletException, IOException {
 
-        // 以下追記
+     // 以下追記
 
         //セッションからログイン中の従業員情報を取得
         EmployeeView loginEmployee = (EmployeeView) getSessionScope(AttributeConst.LOGIN_EMP);
